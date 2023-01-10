@@ -2,11 +2,7 @@
 ### https://www.w3schools.com/python/python_intro.asp
 ### https://www.w3schools.com/python/python_syntax.asp
 
-M = "Masculino"
 
-F = "Feminino"
-
-O = "Outro"
 
 print("********Introduzindo********")
 
@@ -16,21 +12,33 @@ nome = input("Qual seu nome?") ### -> interagindo com usuário ~ os dados serão
 idade = input("Agora, sua idade") ### °..
 
 
-
-def Genero():
-    gen = input("Nos apresente seu gênero")
-
-
 gen = input("Nos diga seu gênero inserindo M para masculino e F para feminino. Para outro, digite O")
-if gen == M:
-    gen == "Masculino"
 
-elif gen == F:
-    gen == "Feminino"
+Mas = 'Masculino'
+Fem = 'Feminino'
+Outr = str
 
-elif gen == O:
-    Genero()
+if gen == 'M':
+    gen = Mas
+    print("Aqui estão suas informações")
+    print(nome)
+    print(idade)
+    print(gen)
 
+elif gen == 'F':
+    gen = Fem
+    print("Aqui estão suas informações")
+    print(nome)
+    print(idade)
+    print(gen)
+
+elif gen == 'O':
+    gen = Outr
+    gen = input("Nos apresente seu gênero")
+    print("Sendo assim, aqui estão suas informações")
+    print(nome)
+    print(idade)
+    print(gen)
 
 else:
     print("Digite novamente!")
